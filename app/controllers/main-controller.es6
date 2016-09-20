@@ -1,6 +1,6 @@
 class MainController{
 
-    constructor ($scope, computer) {
+    constructor (computer) {
 
         this.name = 'Hello! I am unique controller #';
 
