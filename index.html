@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular App</title>
+
+    <!--<script src="node_modules/requirejs/require.js" data-main="app/app.es6.js"></script>-->
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="build/build.js"></script>
+</head>
+<body ng-app="app" >
+
+<div ng-controller="MainController as controller">
+    <h2>{{controller.uniqueName}}</h2>
+</div>
+
+<div ng-controller="SecondaryController as controller1">
+    <h3>{{controller1.greeting()}}</h3>
+</div>
+
+
+
+</body>
+</html>
