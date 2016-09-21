@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Angular App</title>
 
-    <!--<script src="node_modules/requirejs/require.js" data-main="app/app.es6.js"></script>-->
     <script src="node_modules/angular/angular.js"></script>
     <script src="build/build.js"></script>
 </head>
@@ -12,6 +11,8 @@
 
 <div ng-controller="MainController as controller">
     <h2>{{controller.uniqueName}}</h2>
+    <button ng-click="controller.clickHandler($event)">GO!</button>
+    <a href="http://google.com" ng-click="controller.linkClick($event)">External</a>
 </div>
 
 <div ng-controller="SecondaryController as controller1">

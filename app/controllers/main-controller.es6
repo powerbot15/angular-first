@@ -1,4 +1,4 @@
-class MainController{
+class MainController {
 
     constructor (computer) {
 
@@ -8,6 +8,22 @@ class MainController{
 
         this.computer(this.printComputeResult.bind(this));
 
+    }
+
+    clickHandler (e) {
+
+        console.dir(e);
+
+        this.computer(this.printComputeResult.bind(this));
+
+    }
+
+    linkClick (e) {
+
+        console.dir(e);
+        e.preventDefault();
+
+        this.computer(this.printComputeResult.bind(this));
     }
 
     printComputeResult (result) {
